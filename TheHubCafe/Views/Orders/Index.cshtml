@@ -1,0 +1,175 @@
+﻿@model IEnumerable<TheHubCafe.Models.Order>
+
+@{
+    ViewData["Title"] = "Orders";
+}
+
+<h2>Orders</h2>
+
+
+
+<p>
+    <a asp-action="Create" class="btn btn-default" style="background-color: mediumvioletred; color:white ">Create New</a>
+</p>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<div class="container">
+    <h2>List Of Orders</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">See Orders Here !</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Make Your Own Order </h4>
+                </div>
+
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Order Number
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.PastaName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.PizzaName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.SaladName)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="success">
+                                    @Html.DisplayFor(modelItem => item.OrderID)
+                                </td>
+                                <td class="danger">
+                                    @Html.DisplayFor(modelItem => item.PastaName)
+                                </td>
+                                <td class="info">
+                                    @Html.DisplayFor(modelItem => item.PizzaName)
+                                </td>
+                                <td class="warning">
+                                    @Html.DisplayFor(modelItem => item.SaladName)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.OrderID" class="btn btn-default btn-sm">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.OrderID" class="btn btn-default btn-sm">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.OrderID" class="btn btn-default btn-sm">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+
+
+
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+@*trying here
+
+    @model TheHubCafe.Models.Order
+
+    <div class="container">
+        <h2>List Of Orders</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">See Orders Here !</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="container">
+
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create Order !</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content" style="background-color:#E6E6FA">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Create a New Order </h4>
+                            </div>
+
+                            <form asp-action="Create">
+
+                                <div class="form-horizontal">
+
+                                    <hr />
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                    <div class="form-group">
+                                        <label asp-for="PastaName" class="col-md-2 control-label"></label>
+                                        <div class="col-md-10">
+                                            <input asp-for="PastaName" class="form-control" />
+                                            <span asp-validation-for="PastaName" class="text-danger" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="PizzaName" class="col-md-2 control-label"></label>
+                                        <div class="col-md-10">
+                                            <input asp-for="PizzaName" class="form-control" />
+                                            <span asp-validation-for="PizzaName" class="text-danger" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="SaladName" class="col-md-2 control-label"></label>
+                                        <div class="col-md-10">
+                                            <input asp-for="SaladName" class="form-control" />
+                                            <span asp-validation-for="SaladName" class="text-danger" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="Create" class="btn btn-default" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </form>
+
+
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel!</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+    </div>*@

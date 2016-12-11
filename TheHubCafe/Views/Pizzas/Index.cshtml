@@ -1,0 +1,54 @@
+﻿@model IEnumerable<TheHubCafe.Models.Pizza>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div style="width: 50%; margin: 0 auto;">
+    <h2> Our Lovely Pizza Cooked In Style</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7dQIi6d7TGc" frameborder="0" allowfullscreen></iframe>
+</div>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Size)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ingredients)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td  class="success">
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td  class="info">
+            @Html.DisplayFor(modelItem => item.Size)
+        </td>
+        <td  class="warning">
+            @Html.DisplayFor(modelItem => item.ingredients)
+        </td>
+        <td  class="danger">
+            @Html.DisplayFor(modelItem => item.OrderDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
