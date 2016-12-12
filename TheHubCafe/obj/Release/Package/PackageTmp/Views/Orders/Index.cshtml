@@ -8,9 +8,10 @@
 
 
 
-<p>
-    <a asp-action="Create" class="btn btn-default" style="background-color: mediumvioletred; color:white ">Create New</a>
-</p>
+<div class="btn btn-default" style="background-color: mediumvioletred; color:white ">
+    @*<a asp-action="Create" class="btn btn-default" style="background-color: mediumvioletred; color:white ">Create New</a>*@
+    @Html.ActionLink("Create New", "Create")
+</div>
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -25,7 +26,9 @@
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog" style="display: inline-block;
+  text-align: left;
+  vertical-align: middle;">
 
             <!-- Modal content-->
             <div class="modal-content">
@@ -70,9 +73,10 @@
                                     @Html.DisplayFor(modelItem => item.SaladName)
                                 </td>
                                 <td>
-                                    <a asp-action="Edit" asp-route-id="@item.OrderID" class="btn btn-default btn-sm">Edit</a> |
-                                    <a asp-action="Details" asp-route-id="@item.OrderID" class="btn btn-default btn-sm">Details</a> |
-                                    <a asp-action="Delete" asp-route-id="@item.OrderID" class="btn btn-default btn-sm">Delete</a>
+                                  
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.OrderID }) |
+                                    @Html.ActionLink("Details", "Details", new { id = item.OrderID }) |
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.OrderID })
                                 </td>
                             </tr>
                         }

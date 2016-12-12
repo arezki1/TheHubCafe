@@ -84,3 +84,9 @@ C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\obj\Release\TheHubC
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\obj\Release\TheHubCafe.csproj.GenerateResource.Cache
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\obj\Release\TheHubCafe.Migrations.updatedatabases.resources
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\obj\Release\TheHubCafe.Migrations.AddNameField.resources
+C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Net.Http.Formatting.dll
+C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Web.Http.dll
+C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Web.Http.WebHost.dll
+C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Net.Http.Formatting.xml
+C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Web.Http.xml
+C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Web.Http.WebHost.xml
