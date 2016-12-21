@@ -77,7 +77,6 @@ C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\Microsoft.Owin.
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\Microsoft.Owin.Security.Google.xml
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\Microsoft.Owin.Security.Twitter.xml
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\obj\Debug\TheHubCafe.csprojResolveAssemblyReference.cache
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\obj\Debug\TheHubCafe.dll
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\obj\Debug\TheHubCafe.pdb
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\obj\Debug\TheHubCafe.Migrations.Initial.resources
@@ -90,3 +89,4 @@ C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Web.Http
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Net.Http.Formatting.xml
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Web.Http.xml
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Web.Http.WebHost.xml
+C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\obj\Debug\TheHubCafe.Migrations.firstname.resources

@@ -32,12 +32,20 @@ namespace TheHubCafe.Controllers
         }
         //GET: Pizzas/Serach
 
+
             public ActionResult Search()
 
         {
 
             return View();
         }
+        public ActionResult SearchPizzaName()
+        {
+
+            return View();
+        }
+
+
         // GET: Pizzas/Create
         public ActionResult Create()
         {

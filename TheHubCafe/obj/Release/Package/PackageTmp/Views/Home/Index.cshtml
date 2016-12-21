@@ -1,4 +1,5 @@
-﻿<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+﻿
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -6,6 +7,10 @@
         <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
+
+        <div class="item">
+            <img src="~/Content/images/restaurant.jpg" height="80" width="720" alt="ASP.NET" class="img-responsive" />
+        </div>
         <div class="item active">
             <img src="~/Content/images/pizza.jpg" height="80" width="720" alt="ASP.NET" class="img-responsive" />
 
@@ -14,11 +19,9 @@
             <img src="~/Content/images/pasta.jpg" height="80" width="720" alt="ASP.NET" class="img-responsive" />
         </div>
         <div class="item">
-            <img src="~/Content/images/salad.jpg" height="50" width="720" alt="ASP.NET" class="img-responsive" />
+            <img src="~/Content/images/salad.jpg" height="80" width="720" alt="ASP.NET" class="img-responsive" />
         </div>
-        <div class="item">
-            <img src="~/Content/images/restaurant.jpg" height="80" width="720" alt="ASP.NET" class="img-responsive" />
-        </div>
+
     </div>
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -31,50 +34,16 @@
 </div>
 
 
-
-
 <div>
-    <h2>All Products</h2>
-    <ul id="products" />
+
+    <h1> WELCOME </h1>
+
+    <p>
+        Our Restaurant is situated in the dublin 8 area, we are the first Italian restaurant<br />
+        that opened in this area. Our food is fresly made daily by our famous and experienced chefs<br /> from Napoli.
+    </p> <br />
+    <p>
+        Our story started when the owner came to Dublin to establish his oun restaurant is this amazing<br /> town,
+        from there the success was in the doors, and the restaurat got famous thanks to its hard working<br /> staff.
+        We hope you will enjoy the tour in our website and discover our menu and offers.
 </div>
-<div>
-    <h2>Search by ID</h2>
-    <input type="text" id="prodId" size="5" />
-    <p>Hover the mouse pointer over this paragraph.</p>
-    <input type="button" value="Search" onclick="find();" />
-    <p id="product" />
-</div>
-
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
-<script>
-    var uri = 'Pasta';
-
-    $(document).ready(function () {
-      // Send an AJAX request
-      $.getJSON(uri)
-          .done(function (data) {
-            // On success, 'data' contains a list of products.
-            $.each(data, function (key, item) {
-              // Add a list item for the product.
-              $('<li>', { text: formatItem(item) }).appendTo($('#products'));
-            });
-          });
-    });
-
-    function formatItem(item) {
-      return item.Size + ': $' + item.Name;
-    }
-
-    $(document).ready(function () {
-        $("p").hover(function () {
-            var id = $('#prodId').val();
-            $.getJSON(uri + '/' + id)
-                .done(function (data) {
-                    $('#product').text(formatItem(data));
-                })
-                .fail(function (jqXHR, textStatus, err) {
-                    $('#product').text('Error: ' + err);
-                });
-        });
-    });
-</script>

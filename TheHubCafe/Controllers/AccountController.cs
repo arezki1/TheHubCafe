@@ -151,7 +151,7 @@ namespace TheHubCafe.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email,name=model.Name };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email,Name=model.Name, LastName = model.LastName };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

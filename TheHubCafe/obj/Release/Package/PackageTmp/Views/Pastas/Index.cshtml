@@ -1,10 +1,252 @@
 ﻿@model IEnumerable<TheHubCafe.Models.Pasta>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Pastas";
+}
+<style type="text/css">
+    .menu-body {
+  max-width: 680px;
+  margin: 0 auto;
+  display: block;
+  color: rgb(92, 92, 92);
 }
 
-<h2>Index</h2>
+.menu-section {
+  margin-bottom: 80px;
+}
+
+.menu-section-title {
+  font-family: georgia;
+  font-size: 50px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0; 
+  text-align: Center;
+}
+
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+}
+
+.menu-item-name{
+  font-family: helvetica;
+  font-weight: bold;
+  border-bottom: 2px dotted rgb(213, 213, 213);
+}
+
+.menu-item-description {
+  font-style: italic;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+.menu-item-price{
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+  margin-top: -22px;
+}
+
+    </style>
+
+<h2>Our Pastas</h2>
+<div class="menu-body">
+
+    <!-- Section starts: Appetizers -->
+    <div class="menu-section">
+
+        <h2 class="menu-section-title">MAIN DISHES</h2>
+
+        <!-- Item starts -->
+        <div class="menu-item">
+            <div class="menu-item-name">
+                Arrabiata
+            </div>
+
+            <div class="menu-item-price">
+                $15
+            </div>
+
+            <div class="menu-item-description">
+                Penette pasta, Chicken, tomato Sauce, Parsley, Oregano+Black Peppers, Garlic Oil
+            </div>
+
+        </div>
+        <!-- Item ends -->
+        <!-- Item starts -->
+        <div class="menu-item">
+
+            <div class="menu-item-name">
+                Salmoni
+            </div>
+
+            <div class="menu-item-price">
+                $17
+            </div>
+
+            <div class="menu-item-description">
+                Spagetti, Cream, Salmon, Shaved Cheese, Garlic
+            </div>
+
+        </div>
+        <!-- Item ends -->
+        <!-- Item starts -->
+        <div class="menu-item">
+
+            <div class="menu-item-name">
+                Napolitana
+            </div>
+
+            <div class="menu-item-price">
+                $10
+            </div>
+
+            <div class="menu-item-description">
+                Penette pasta, Tomato Sauce, Bechamel, Oregano+Black Peppers, Basil Leaves.
+            </div>
+
+        </div>
+        <!-- Item ends -->
+        <!-- Item starts -->
+        <div class="menu-item">
+
+            <div class="menu-item-name">
+                Pollo Pesto
+            </div>
+
+            <div class="menu-item-price">
+                $16
+            </div>
+
+            <div class="menu-item-description">
+               Penette Pasta, Chicken, pesto, Bechamel, Cheese Mozzarella, Oregano+Black Peppers, Shaved Cheese
+            </div>
+
+        </div>
+        <!-- Item ends -->
+
+    </div>
+    <!-- Section ends: Appetizers -->
+    <!-- Section starts: Drinks -->
+    <div class="menu-section">
+
+        <h2 class="menu-section-title">DRINKS & WINES</h2>
+
+        <!-- Item starts -->
+        <div class="menu-item">
+
+            <div class="menu-item-name">
+                Coke
+            </div>
+
+            <div class="menu-item-price">
+                $3
+            </div>
+
+            <div class="menu-item-description">
+                Diet or Regular Coke Served with Glass on Demand.
+            </div>
+
+        </div>
+        <!-- Item ends -->
+        <!-- Item starts -->
+        <div class="menu-item">
+
+            <div class="menu-item-name">
+                Perroni
+            </div>
+
+            <div class="menu-item-price">
+                $7
+            </div>
+
+            <div class="menu-item-description">
+                Famous Italian Beer, Very Light and Tasty
+            </div>
+
+        </div>
+        <!-- Item ends -->
+        <!-- Item starts -->
+        <div class="menu-item">
+
+            <div class="menu-item-name">
+                Henken
+            </div>
+
+            <div class="menu-item-price">
+                $6
+            </div>
+
+            <div class="menu-item-description">
+              The World's Leading International Premium Beer
+            </div>
+
+        </div>
+        <!-- Item ends -->
+        <!-- Item starts -->
+        <div class="menu-item">
+
+            <div class="menu-item-name">
+                Asti
+            </div>
+
+            <div class="menu-item-price">
+                $30
+            </div>
+
+            <div class="menu-item-description">
+                Sparkling wine made from Moscato grapes around Asti,<br/>
+                 in Piedmont. Deliciously sweet, low in alcohol, with pronounced <br/>
+                fruity and floral flavors. Usually non-vintage, but freshness and youth are essential to its quality.
+            </div>
+
+        </div>
+        <!-- Item ends -->
+        <!-- Item ends -->
+        <!-- Item starts -->
+        <div class="menu-item">
+
+            <div class="menu-item-name">
+                Frascati
+            </div>
+
+            <div class="menu-item-price">
+                $35
+            </div>
+
+            <div class="menu-item-description">
+                From the Frascati area, south of Rome, and mainly Trebbiano grapes.<br />
+                 Dry or slightly off-dry, light-bodied, and un-oaked with crisp acidity and subdued flavor.
+            </div>
+
+        </div>
+        <!-- Item ends -->
+        <!-- Item ends -->
+        <!-- Item starts -->
+        <div class="menu-item">
+
+            <div class="menu-item-name">
+                Gavi
+            </div>
+
+            <div class="menu-item-price">
+                $32
+            </div>
+
+            <div class="menu-item-description">
+                Gavi: Dry, medium-bodied wine from Cortese grapes in the Gavi area of Piedmont.<br/>
+                 Typically crisp and un-oaked (sometimes slightly oaky) with delicate notes of honey, apples, and minerals.
+            </div>
+
+        </div>
+        <!-- Item ends -->
+    </div>
+    <!-- Section ends: Drinks -->
+
+</div>
+
+
 
 <p>
     @Html.ActionLink("Create New", "Create")

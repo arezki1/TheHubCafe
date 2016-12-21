@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "SearchPizzaName";
+}
+
+<h2>Search a Pizza by Name</h2>
+
+
+<div>
+    <input id="searchString" type="text" placeholder= "pizza name"/>
+    
+    <input type="button" id="btnSave" value="Search" />
+</div>
+
+<div id="resultsDiv"> </div>
+
+
+
+@section scripts{
+
+
+   @Scripts.Render("~/Scripts/bootstrap.min.js")
+
+
+    <script type="text/javascript">
+        $('#btnSave').click(function (e) {
+            e.preventDefault();
+            $("#resultsDiv").html("");
+            var namePart = { "namePart": $("#searchString").val() };
+            jQuery.ajax({
+                type: "POST",
+                contentType: "aplication/json;charset=utf-8",
+                url: "~/Deals.asmx/GetPizzasByName",
+
+                data: JSON.stringify(namePart),
+                dataType: "json",
+                async: true,
+                success: function (response, textStatus) {
+                    if (textStatus == "success") {
+                        for (var i = 0; i < response.d.length; i++) {
+                            $("#resultsDiv").html($("#resultsDiv".html() + response.d[i] + "</br>"));
+                           
+                            alert("Done");
+                            
+                        }
+                    }
+                    else {
+                        alert("Error occurs on the Database level!");
+                    
+                    }
+                },
+
+                error: function (response, status, error) {
+                    $("#reslutsDiv").html("ERROR </br>");
+                }
+            })
+        });
+
+
+    </script>
+
+   
+    }
+

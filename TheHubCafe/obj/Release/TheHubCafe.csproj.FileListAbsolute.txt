@@ -90,3 +90,4 @@ C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Web.Http
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Net.Http.Formatting.xml
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Web.Http.xml
 C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\bin\System.Web.Http.WebHost.xml
+C:\3 rd year\Advnced-Internet-Technologies\TheHub\TheHubCafe\obj\Release\TheHubCafe.Migrations.firstname.resources

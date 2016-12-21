@@ -220,6 +220,10 @@
     <Compile Include="Controllers\PastasController.cs" />
     <Compile Include="Controllers\PizzasController.cs" />
     <Compile Include="Controllers\SaladsController.cs" />
+    <Compile Include="Deals.asmx.cs">
+      <DependentUpon>Deals.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -234,6 +238,10 @@
     <Compile Include="Migrations\201612031142046_AddNameField.cs" />
     <Compile Include="Migrations\201612031142046_AddNameField.Designer.cs">
       <DependentUpon>201612031142046_AddNameField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612211700171_firstname.cs" />
+    <Compile Include="Migrations\201612211700171_firstname.Designer.cs">
+      <DependentUpon>201612211700171_firstname.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -254,6 +262,7 @@
     <Content Include="Content\images\pasta.jpg" />
     <Content Include="Content\images\pizza.jpg" />
     <Content Include="Content\images\restaurant.jpg" />
+    <Content Include="Deals.asmx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -332,6 +341,7 @@
     <Content Include="Views\Salads\Edit.cshtml" />
     <Content Include="Views\Salads\Index.cshtml" />
     <Content Include="Views\Pizzas\Search.cshtml" />
+    <Content Include="Views\Pizzas\SearchPizzaName.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -356,6 +366,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201612031142046_AddNameField.resx">
       <DependentUpon>201612031142046_AddNameField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612211700171_firstname.resx">
+      <DependentUpon>201612211700171_firstname.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
